@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+
+@font-face {
+  font-family: 's-regular';
+  src: url(../fonts/SCDream4.otf);
+}
+
+
+@font-face {
+  font-family: 's-bold';
+  src: url(../fonts/SCDream6.otf);
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+}
+
+@font-face {
+  font-family: 'Druk-eng';
+  src: url(../fonts/Druk-Wide-Bold.ttf);
+}
+
+
+@font-face {
+  font-family: 's-regular';
+  src: url(../fonts/SCDream4.otf);
+}
+
+:root {
+  --c-color1: rgba(254, 58, 58, 0.8);
+  --c-color2: rgba(248, 242, 85, 0.8);
+  --c-color3: rgba(102, 201, 86, 0.8);
+  --c-color4: rgba(66, 197, 254, 0.8);
+  --l-color1: rgba(228, 73, 73, 1);
+  --m-color1: #fff;
+}
+
+body {
+  font-family: 's-regular';
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.f_center {
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+main section {
+  width: 75%;
+  padding: 0px 20px 10px 20px;
+}
+
+article {
+  width: 100%;
+}
