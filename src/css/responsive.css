@@ -457,6 +457,7 @@ width: 25%;
 
 .portfolio {
   padding: 0px;
+  height: 100vh;
 }
 
 .portfolio .port_title {
@@ -465,41 +466,40 @@ width: 25%;
   font-family: 's-bold';
 }
 
-.per_project, .team_project {
+.tab, .p_index {
   position: absolute;
 }
 
-.per_project {
+.tab {
   width: 40%;
   right: 10px;
   top: -60px;
   line-height: 80px;
 }
 
-.per_project ul {
+.tab ul {
   width: 100%;
 }
 
-.per_project ul li {
+.tab ul li {
   width: 50%;
   font-size: 20px;
   line-height: 60px;
-  font-family: s-bold;
   border-radius: 12px 12px 0px 0px;
   text-align: center;
   cursor: pointer;
 }
 
-.per_project ul li:first-child {
+.tab ul li:first-child {
   background: var(--c-color3);
 }
 
-.per_project ul li:last-child {
+.tab ul li:last-child {
   background: var(--c-color2);
   transform: translateX(-20px);
 }
 
-.team_project {
+.p_index {
   top: 20px;
   right: -70px;
 }
@@ -508,7 +508,7 @@ width: 25%;
   background: rgba(255, 72, 204, 1)!important;
 }
 
-.team_project ul li {
+.p_index ul li {
   background: rgba(255, 72, 204, 0.5);
   border-radius: 0px 12px 12px 0px;
   margin-bottom: 10px;
@@ -523,7 +523,6 @@ width: 25%;
 
 .portfolio .port_com {
   width: 90%;
-  height: 100%;
   background: var(--m-color1);
   padding: 20px 0px 0px 20px;
   position: relative;
@@ -532,6 +531,7 @@ width: 25%;
 
 .portfolio .port_com > div, .portfolio .port_com > div > div {
   width: 100%;
+  height: 100vh;
 }
 
 .portfolio .port_com h2 {
@@ -717,6 +717,111 @@ width: 25%;
   line-height: 24px;
 }
 
+/* 개인 포트폴리오 */
+
+.per_wrap {
+  padding: 15px 0px 0px 1%;
+  width: 99%;
+  overflow: hidden;
+}
+
+.per_wrap img {
+  width: 60%;
+}
+
+.p_title {
+  font-size: 1.5rem;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 's-bold';
+}
+
+.p_title span {
+  padding: 1rem;
+  margin-right: 1rem;
+  color: #fff;
+  background: var(--c-color1);
+}
+
+.p_title p {
+  position: relative;
+  z-index: 2;
+}
+
+.p_title p::after, .p_link a::after, .p_link > p::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 105%;
+  height: 20px;
+  top: 10px;
+  left: 0px;
+  z-index: -1;
+  background: var(--c-color2);
+}
+
+.frame {
+  width: 60%;
+  position: relative;
+}
+
+.frame iframe {
+  width: 100%;
+  height: 65vh;
+}
+
+.frame p {
+  line-height: 3.5rem;
+}
+
+.p_link {
+  align-items: center;
+  justify-content: space-between;
+  font-family: 's-bold';
+}
+
+.p_link > p, .p_link a {
+  position: relative;
+  z-index: 1;
+}
+
+.p_link a {
+  font-size: 0.9rem;
+}
+
+.p_link > p::after {
+  background-color: var(--c-color3);
+  top: 25px;
+}
+
+.p_link a::after {
+  top: 4px;
+  background-color: var(--c-color4);
+}
+
+.bold {
+  font-family: 's-bold';
+  line-height: 50px;
+  font-size: 1.3rem;
+}
+
+.p_explain {
+  gap: 20px;
+}
+
+.p_desc {
+  height: 65vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p_desc p:not(.bold) {
+  padding-left: 20px;
+  line-height: 1.5rem;
+}
+.function ul li {
+  line-height: 2.5rem;
+}
 /* 홈 화면 */
 
 .sky {
@@ -1350,7 +1455,7 @@ div.title div:last-child {
   .portfolio .port_com {
     font-size: 1rem;
   }
-  .per_project ul li {
+  .tab ul li {
     font-size: 1rem;
   }
 @media (max-width: 1465px) {
